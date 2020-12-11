@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@font-face {
+  font-family: "Favorit Medium";
+  src: url(fonts/Favorit\ Medium.ttf);
+}
+
+body {
+  font-family: "Favorit Medium", -apple-system, BlinkMacSystemFont,
+    "SF Pro Display", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "changes box speakers artists" 1fr
+    "menu . speakers artists" 1fr
+    "menu tickets speakers artists" 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.container {
+  padding: 8px;
+}
+
+.changes {
+  grid-area: changes;
+  background-color: black;
+  color: white;
+}
+
+.box {
+  grid-area: box;
+  background-color: rgb(100, 0, 255);
+}
+
+.menu {
+  grid-area: menu;
+  background-color: red;
+}
+
+.tickets {
+  grid-area: tickets;
+  background-color: rgb(255, 200, 0);
+}
+
+.speakers {
+  grid-area: speakers;
+}
+
+.artists {
+  grid-area: artists;
+}
+
+/* font */
+.text__rotate {
+  transform: scale(1, -1);
+  float: left;
+}
+.text__highlight {
+  display: inline-block;
+  height: 1.65vmax;
+  background-color: rgb(100, 0, 255);
+}
+
+h1 {
+  font-size: 2.5vmax;
+}
+h2 {
+  font-size: 2vmax;
+}
+h3 {
+  font-size: 1vmax;
+  margin-bottom: 16px;
+}
+h5 {
+  font-size: 1.65vmax;
+  display: inline-block;
+}
+
+h5:hover {
+  background-color: rgb(100, 0, 255);
+}

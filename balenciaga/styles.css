@@ -1,0 +1,239 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+:root {
+  --gray: #f7f7f7;
+  --darkgray: #aaaaac;
+
+  --default-space: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 20px;
+}
+button {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+li {
+  list-style-type: disc;
+  margin-left: var(--default-space);
+}
+a {
+  cursor: pointer;
+  display: block;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* header */
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+header section {
+  border-bottom: 1px solid black;
+  padding: var(--default-space);
+}
+header section:not(:last-child) {
+  display: flex;
+  align-items: center;
+}
+header section:not(:last-child) {
+  border-right: 1px solid black;
+}
+header section:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header section:nth-child(2) i {
+  margin-right: var(--default-space);
+}
+header section:last-child > * {
+  margin-right: var(--default-space);
+}
+
+/* nav */
+nav {
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+nav section {
+  padding: var(--default-space);
+}
+
+/* main */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.slide {
+  width: 50vw;
+  height: 50vw;
+  overflow: hidden;
+}
+.main__images {
+  width: 50vw;
+  display: flex;
+  animation: slide 8s infinite;
+}
+.main__images img {
+  width: 50vw;
+  height: 50vw;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  60% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  85% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+/* main__info */
+.main__info {
+  border-left: 1px solid black;
+}
+.main__info > *:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+/* main__info__status */
+.main__info__status {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main__info__status > * {
+  padding: var(--default-space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__info__status div {
+  border-right: 1px solid black;
+}
+.main__info__status a {
+  background-color: var(--darkgray);
+}
+
+/* main__info__product */
+.main__info__product {
+  padding: var(--default-space);
+}
+.main__info__product *:not(:last-child) {
+  margin-bottom: 24px;
+}
+.main__info__product__name {
+  font-weight: 600;
+}
+
+/* main__info__shipping */
+.main__info__shipping {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main__info__shipping * {
+  padding: 8px;
+}
+.main__info__shipping > * {
+  display: flex;
+  justify-content: center;
+}
+.main__info__shipping div:first-child {
+  border-right: 1px solid black;
+}
+
+/* main__info__details */
+.main__info__details {
+  padding: var(--default-space);
+}
+.main__info__details > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/* footer */
+
+/* footer__back-to-top */
+.footer__back-to-top {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.footer__back-to-top button {
+  border: 1px solid black;
+  width: 160px;
+  height: 28px;
+  border-radius: 14px;
+}
+.footer__back-to-top button marquee {
+  text-align: center;
+}
+
+/* footer__info */
+.footer__info {
+  background-color: var(--darkgray);
+}
+
+/* footer__info__top */
+.footer__info__top {
+  padding: 24px;
+  border-bottom: 1px solid black;
+}
+
+/* footer__info__center */
+.footer__info__center {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.footer__info__center section {
+  border-bottom: 1px solid black;
+  padding: var(--default-space);
+}
+.footer__info__center section:not(:last-child) {
+  border-right: 1px solid black;
+}
+.footer__info__center section > *:not(:last-child) {
+  margin-bottom: var(--default-space);
+}
+
+/* footer__info__bottom */
+.footer__info__bottom {
+  padding: var(--default-space);
+}

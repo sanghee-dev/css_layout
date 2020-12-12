@@ -17,7 +17,3 @@ articles.forEach((article) => {
     article.style.animation = `scrollX ${30000 / height}s linear infinite`;
   }
 });
-
-// const test = "url(images/foreword-contributors.jpg)";
-// const answer = test.replace(/url\((['"])?(.*?)\1\)/gi, "$2");
-// console.log(answer);

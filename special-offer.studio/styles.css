@@ -67,7 +67,6 @@ h4 {
   align-items: center;
   border: none;
 }
-
 .projects .header__button {
   background-color: var(--orange);
   color: var(--red);
@@ -82,7 +81,15 @@ h4 {
 .projects .header__button__circle {
   border: var(--default-border);
 }
-
+.projects .header__button:hover .header__button__circle {
+  border: 2px solid white;
+}
+.projects .header__button:hover .header__button__circle {
+  background-color: white;
+}
+.projects .header__button:hover .button__title {
+  color: white;
+}
 .projects section:nth-child(1) .header__button__circle {
   background-color: var(--red);
 }
@@ -112,6 +119,9 @@ h4 {
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
 }
+.projects__main__designer:hover {
+  color: white;
+}
 .projects__main__title {
   padding: 8px;
   border-left: var(--default-border);
@@ -135,6 +145,9 @@ h4 {
   align-items: center;
   border-bottom: var(--default-border);
 }
+.projects__main__details__field:hover {
+  color: white;
+}
 .projects__main__details__button {
   width: 20vw;
   height: 32px;
@@ -143,6 +156,10 @@ h4 {
   background-color: var(--red);
   color: var(--orange);
   margin: 8px;
+}
+.projects__main__details__button:hover {
+  background-color: white;
+  color: var(--red);
 }
 
 /* info */
@@ -167,7 +184,12 @@ h4 {
 .info .header__button__circle {
   border: 2px solid var(--black);
 }
-
+.info .header__button:hover .header__button__circle {
+  border: 2px solid white;
+}
+.info .header__button:hover .header__title {
+  color: white;
+}
 .info section:nth-child(1) .header__button__circle {
   background-color: var(--black);
 }
@@ -178,4 +200,7 @@ h4 {
 .info__main article {
   text-indent: 32px;
   margin-bottom: 16px;
+}
+.info__main article:hover {
+  color: white;
 }

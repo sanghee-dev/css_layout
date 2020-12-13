@@ -10,4 +10,4 @@
 - You can see several interactive web designs
 - According to the background image size, slide speed and direction are changed
 
-![css_layout](https://user-images.githubusercontent.com/61302874/101992055-f3cdc380-3cf3-11eb-8b40-056fadbf8a05.jpg)
+![css_layout](https://user-images.githubusercontent.com/61302874/102008648-82cef000-3d75-11eb-8826-7087d96ffa85.jpg)

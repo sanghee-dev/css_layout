@@ -16,7 +16,7 @@ articles.forEach((article) => {
     const distance = height - articleWidth;
     article.style.backgroundSize = "100% auto";
     article.style.animation = `scrollY ${
-      distance / ratio / 10
+      distance / ratio / 8
     }s linear infinite`;
   } else {
     const distance = articleWidth * (ratio - 1);

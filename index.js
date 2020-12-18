@@ -41,7 +41,8 @@ if (remainder != 0) {
 }
 
 // reload once
-window.onload = function () {
-  if (location.href.indexOf("reloaded") == -1)
+setInterval(function () {
+  if (location.href.indexOf("reloaded") == -1) {
     location.replace(location.href + "?reloaded");
-};
+  }
+}, 1000);

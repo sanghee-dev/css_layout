@@ -39,3 +39,9 @@ if (remainder != 0) {
     main.appendChild(blank);
   }
 }
+
+// reload once
+window.onload = function () {
+  if (location.href.indexOf("reloaded") == -1)
+    location.replace(location.href + "?reloaded");
+};
